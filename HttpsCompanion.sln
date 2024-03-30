@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpsCompanion", "HttpsCompanion\HttpsCompanion.csproj", "{B5449824-BCCD-4FCC-AE2B-2B37853251FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5449824-BCCD-4FCC-AE2B-2B37853251FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5449824-BCCD-4FCC-AE2B-2B37853251FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5449824-BCCD-4FCC-AE2B-2B37853251FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5449824-BCCD-4FCC-AE2B-2B37853251FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A0DE951-F8EC-42DA-B416-50542036804E}
+	EndGlobalSection
+EndGlobal
