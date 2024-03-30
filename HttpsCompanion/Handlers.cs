@@ -24,22 +24,14 @@ namespace HttpsCompanion
 				Version? Version = null;
 				if (Host is null)
 				{
-					// no valid host name
-					RemoteStream.Write(EncodeHttpResponse(HttpVersion.Version11, HttpStatusCode.BadRequest, new() {
-				{ "Connection", "close" },
-				{ "Content-Length", "0" },
-			}));
-					RemoteStream.Flush();
+					// no valid host names
+					RemoteStream.Close();
 				}
 				else if (!ProtocolVersion.StartsWith("HTTP/") ||
 					!Version.TryParse(ProtocolVersion["HTTP/".Length..], out Version))
 				{
 					// cannot parse http protocol version
-					RemoteStream.Write(EncodeHttpResponse(HttpVersion.Version11, HttpStatusCode.BadRequest, new() {
-				{ "Connection", "close" },
-				{ "Content-Length", "0" },
-			}));
-					RemoteStream.Flush();
+					RemoteStream.Close();
 				}
 				else
 				{
